@@ -10,6 +10,7 @@ import java.util.List;
 
 import static org.junit.Assert.*;
 
+//@TransactionConfiguration(defaultRollback = false)设置默认回滚为false，这样数据就会保存到数据库，可以看到有数据添加到数据库，否则测试可以通过，但是看不到
 public class PersonDaoTest extends BaseDaoTestCase {
     @Autowired
     private PersonDao personDao;
